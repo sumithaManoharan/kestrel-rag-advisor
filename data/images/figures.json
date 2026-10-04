@@ -1,0 +1,1242 @@
+[
+  {
+    "id": "2004.04906_fig_1",
+    "paper": "2004.04906",
+    "page": 5,
+    "label": "Figure 1",
+    "caption": "Figure 1: Retriever top-k accuracy with different numbers of training examples used in our dense passage retriever vs BM25. The results are measured on the development set of Natural Questions. Our DPR trained using 1,000 examples already outperforms BM25.",
+    "image_path": "data/images/2004.04906_fig_1.png"
+  },
+  {
+    "id": "2005.11401_fig_1",
+    "paper": "2005.11401",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: Overview of our approach. We combine a pre-trained retriever (Query Encoder + Document Index) with a pre-trained seq2seq model (Generator) and fine-tune end-to-end. For query x, we use Maximum Inner Product Search (MIPS) to find the top-K documents zi. For final prediction y, we treat z as a latent variable and marginalize over seq2seq predictions given different documents.",
+    "image_path": "data/images/2005.11401_fig_1.png"
+  },
+  {
+    "id": "2005.11401_fig_3",
+    "paper": "2005.11401",
+    "page": 8,
+    "label": "Figure 3",
+    "caption": "Figure 3: Left: NQ performance as more documents are retrieved. Center: Retrieval recall performance in NQ. Right: MS-MARCO Bleu-1 and Rouge-L as more documents are retrieved.",
+    "image_path": "data/images/2005.11401_fig_3.png"
+  },
+  {
+    "id": "2005.11401_fig_4",
+    "paper": "2005.11401",
+    "page": 17,
+    "label": "Figure 4",
+    "caption": "Figure 4: Annotation interface for human evaluation of factuality. A pop-out for detailed instructions and a worked example appear when clicking \"view tool guide\".",
+    "image_path": "data/images/2005.11401_fig_4.png"
+  },
+  {
+    "id": "2212.10496_fig_1",
+    "paper": "2212.10496",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: An illustration of the HyDE model. Documents snippets are shown. HyDE serves all types of queries without changing the underlying GPT-3 and Contriever/mContriever models.",
+    "image_path": "data/images/2212.10496_fig_1.png"
+  },
+  {
+    "id": "2304.09542_fig_1",
+    "paper": "2304.09542",
+    "page": 1,
+    "label": "Figure 1",
+    "caption": "Figure 1: Average results of ChatGPT and GPT-4 (zero-shot) on passage re-ranking benchmarks (TREC, BEIR, and Mr.TyDi), compared with BM25 and previous best-supervised systems (SOTA sup., e.g., monoT5 (Nogueira et al., 2020)).",
+    "image_path": "data/images/2304.09542_fig_1.png"
+  },
+  {
+    "id": "2304.09542_fig_2",
+    "paper": "2304.09542",
+    "page": 3,
+    "label": "Figure 2",
+    "caption": "Figure 2: Three types of instructions for zero-shot passage re-ranking with LLMs. The gray and yellow blocks indicate the inputs and outputs of the model. (a) Query generation relies on the log probability of LLMs to generate the query based on the passage. (b) Relevance generation instructs LLMs to output relevance judgments. (c) Permutation generation generates a ranked list of a group of passages. See Appendix A for details.",
+    "image_path": "data/images/2304.09542_fig_2.png"
+  },
+  {
+    "id": "2304.09542_fig_3",
+    "paper": "2304.09542",
+    "page": 3,
+    "label": "Figure 3",
+    "caption": "Figure 3: Illustration of re-ranking 8 passages using sliding windows with a window size of 4 and a step size of 2. The blue color represents the first two windows, while the yellow color represents the last window. The sliding windows are applied in back-to-first order, meaning that the first 2 passages in the previous window will participate in re-ranking the next window.",
+    "image_path": "data/images/2304.09542_fig_3.png"
+  },
+  {
+    "id": "2304.09542_fig_4",
+    "paper": "2304.09542",
+    "page": 8,
+    "label": "Figure 4",
+    "caption": "Figure 4: Scaling experiment. The dashed line indicates the baseline methods: GPT-4, monoT5, monoBERT, and ChatGPT. The solid green line and solid gray line indicate the specialized Deberta models obtained by the proposed permutation distillation and by supervised learning on MS MARCO, respectively. This figure compares the models' performance on TREC and BEIR across varying model sizes (70M to 435M) and training data sizes (500 to 10K).",
+    "image_path": "data/images/2304.09542_fig_4.png"
+  },
+  {
+    "id": "2304.09542_fig_5",
+    "paper": "2304.09542",
+    "page": 16,
+    "label": "Figure 5",
+    "caption": "Figure 5: Model architecture of BERT-like and GPT-like specialized models.",
+    "image_path": "data/images/2304.09542_fig_5.png"
+  },
+  {
+    "id": "2305.06983_fig_1",
+    "paper": "2305.06983",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: An illustration of forward-looking active retrieval augmented generation (FLARE). Starting with the user input x and initial retrieval results Dx, FLARE iteratively generates a temporary next sentence (shown in gray italic) and check whether it contains low-probability tokens (indicated with underline). If so (step 2 and 3), the system retrieves relevant documents and regenerates the sentence.",
+    "image_path": "data/images/2305.06983_fig_1.png"
+  },
+  {
+    "id": "2305.06983_fig_2",
+    "paper": "2305.06983",
+    "page": 4,
+    "label": "Figure 2",
+    "caption": "Figure 2: An illustration of forward-looking active retrieval augmented generation with retrieval instructions (FLAREinstruct). It iteratively generates search queries (shown in gray italic) to retrieve relevant information to aid future generations.",
+    "image_path": "data/images/2305.06983_fig_2.png"
+  },
+  {
+    "id": "2305.06983_fig_3",
+    "paper": "2305.06983",
+    "page": 5,
+    "label": "Figure 3",
+    "caption": "Figure 3: Implicit and explicit query formulation. Tokens with low probabilities are marked with underlines.",
+    "image_path": "data/images/2305.06983_fig_3.png"
+  },
+  {
+    "id": "2305.06983_fig_4",
+    "paper": "2305.06983",
+    "page": 7,
+    "label": "Figure 4",
+    "caption": "Figure 4: Comparision between FLARE and baselines across all tasks/datasets. We report the primary metric for each dataset: EM for 2WikiMultihopQA, StrategyQA, and ASQA, and UniEval for WikiAsp.",
+    "image_path": "data/images/2305.06983_fig_4.png"
+  },
+  {
+    "id": "2305.06983_fig_5",
+    "paper": "2305.06983",
+    "page": 8,
+    "label": "Figure 5",
+    "caption": "Figure 5: Performance (EM) of FLARE with respect to the percentage of steps/sentences with retrieval on 2WikiMultihopQA and StrategyQA.",
+    "image_path": "data/images/2305.06983_fig_5.png"
+  },
+  {
+    "id": "2307.03172_fig_1",
+    "paper": "2307.03172",
+    "page": 1,
+    "label": "Figure 1",
+    "caption": "Figure 1: Changing the location of relevant information (in this case, the position of the passage that answers an input question) within the language model's input context results in a U-shaped performance curve-models are better at using relevant information that occurs at the very beginning (primacy bias) or end of its input context (recency bias), and performance degrades significantly when models must access and use information located in the middle of its input context.",
+    "image_path": "data/images/2307.03172_fig_1.png"
+  },
+  {
+    "id": "2307.03172_fig_10",
+    "paper": "2307.03172",
+    "page": 9,
+    "label": "Figure 10",
+    "caption": "Figure 10: Multi-document QA performance of MPT30B-Instruct compared against its base model (i.e., before instruction fine-tuning) MPT-30B. Both models have a U-shaped performance curve, where performance is much higher when relevant information occurs at the start or end of the input context, indicating that the instruction fine-tuning process itself is not necessarily responsible for these performance trends.",
+    "image_path": "data/images/2307.03172_fig_10.png"
+  },
+  {
+    "id": "2307.03172_fig_11",
+    "paper": "2307.03172",
+    "page": 10,
+    "label": "Figure 11",
+    "caption": "Figure 11: Retriever recall and model performance as a function of the number of retrieved documents. Model performance saturates long before retriever recall, indicating that the models have difficulty making use of the extra retrieved documents.",
+    "image_path": "data/images/2307.03172_fig_11.png"
+  },
+  {
+    "id": "2307.03172_fig_12",
+    "paper": "2307.03172",
+    "page": 14,
+    "label": "Figure 12",
+    "caption": "Figure 12: Language model performance on a unambiguous subset of questions.",
+    "image_path": "data/images/2307.03172_fig_12.png"
+  },
+  {
+    "id": "2307.03172_fig_13",
+    "paper": "2307.03172",
+    "page": 15,
+    "label": "Figure 13",
+    "caption": "Figure 13: Language model performance on multidocument QA when using random distractors, rather than retrieved distractors.",
+    "image_path": "data/images/2307.03172_fig_13.png"
+  },
+  {
+    "id": "2307.03172_fig_14",
+    "paper": "2307.03172",
+    "page": 15,
+    "label": "Figure 14",
+    "caption": "Figure 14: Language model performance when randomizing the order of the distractors (rather than presenting them in order of decreasing relevance) and mentioning as such in the prompt.",
+    "image_path": "data/images/2307.03172_fig_14.png"
+  },
+  {
+    "id": "2307.03172_fig_15",
+    "paper": "2307.03172",
+    "page": 15,
+    "label": "Figure 15",
+    "caption": "Figure 15: Although GPT-4 has higher absolute performance than other models, its performance still degrades when relevant information occurs in the middle of the input context.",
+    "image_path": "data/images/2307.03172_fig_15.png"
+  },
+  {
+    "id": "2307.03172_fig_16",
+    "paper": "2307.03172",
+    "page": 16,
+    "label": "Figure 16",
+    "caption": "Figure 16: Multi-document QA performance (20 total documents) of Llama-2 models of varying sizes (7B, 13B, 70B parameters), with and without additional supervised fine-tuning and reinforcement learning from human feedback (\"-chat-\" models).",
+    "image_path": "data/images/2307.03172_fig_16.png"
+  },
+  {
+    "id": "2307.03172_fig_4",
+    "paper": "2307.03172",
+    "page": 4,
+    "label": "Figure 4",
+    "caption": "Figure 4: Modulating the input context length of the multi-document question answering example presented in Figure 2. Adding documents that do not contain the answer increases the length of the input context, but does not affect the desired output.",
+    "image_path": "data/images/2307.03172_fig_4.png"
+  },
+  {
+    "id": "2307.03172_fig_5",
+    "paper": "2307.03172",
+    "page": 5,
+    "label": "Figure 5",
+    "caption": "Figure 5: The effect of changing the position of relevant information (document containing the answer) on multidocument question answering performance. Lower positions are closer to the start of the input context. Performance is highest when relevant information occurs at the very start or end of the context, and rapidly degrades when models must reason over information in the middle of their input context.",
+    "image_path": "data/images/2307.03172_fig_5.png"
+  },
+  {
+    "id": "2307.03172_fig_6",
+    "paper": "2307.03172",
+    "page": 6,
+    "label": "Figure 6",
+    "caption": "Figure 6: Example of the key-value retrieval task, with an input context and the desired model output. Given a key, the goal is to return the associated value. All keys and values are 128-bit UUIDs. The relevant key-value pair for answering the query is bolded here within the input context for clarity.",
+    "image_path": "data/images/2307.03172_fig_6.png"
+  },
+  {
+    "id": "2307.03172_fig_7",
+    "paper": "2307.03172",
+    "page": 7,
+    "label": "Figure 7",
+    "caption": "Figure 7: The effect of changing the input context length and the position of relevant information on key-value retrieval performance. Lower positions are closer to the start of the input context. Although some models show perfect accuracy on this synthetic task (e.g., Claude-1.3 and Claude-1.3 (100K)), we see again that performance is often highest when relevant information is occurs at the very start or end of the context, and rapidly degrades when models must retrieve from the middle of the input context.",
+    "image_path": "data/images/2307.03172_fig_7.png"
+  },
+  {
+    "id": "2307.03172_fig_8",
+    "paper": "2307.03172",
+    "page": 8,
+    "label": "Figure 8",
+    "caption": "Figure 8: When encoder-decoder models (Flan-UL2 and Flan-T5-XXL) evaluated on sequences that are shorter than their encoder's training-time maximum sequence length (2048 and 512 tokens, respectively), they are relatively robust to changes in the position of relevant information within their input context (left subplot). In contrast, when these models are evaluated on sequences longer than those seen during training (center and right subplots), we observe a U-shaped performance curve-performance is higher when relevant information occurs at the beginning or end of the input context, as opposed to the middle of the input context.",
+    "image_path": "data/images/2307.03172_fig_8.png"
+  },
+  {
+    "id": "2307.03172_fig_9",
+    "paper": "2307.03172",
+    "page": 8,
+    "label": "Figure 9",
+    "caption": "Figure 9: Query-aware contextualization (placing the query before and after the documents) does not substantially improve robustness of language models to changing the position of relevant information in multidocument QA; performance slightly increases when relevant information occurs at the very beginning, but otherwise slightly decreases.",
+    "image_path": "data/images/2307.03172_fig_9.png"
+  },
+  {
+    "id": "2310.11511_fig_1",
+    "paper": "2310.11511",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: Overview of SELF-RAG. SELF-RAG learns to retrieve, critique, and generate text passages to enhance overall generation quality, factuality, and verifiability.",
+    "image_path": "data/images/2310.11511_fig_1.png"
+  },
+  {
+    "id": "2310.11511_fig_2",
+    "paper": "2310.11511",
+    "page": 5,
+    "label": "Figure 2",
+    "caption": "Figure 2: SELF-RAG training examples. The left example does not require retrieval while the right one requires retrieval; thus, passages are inserted. More examples are in Appendix Table 4.",
+    "image_path": "data/images/2310.11511_fig_2.png"
+  },
+  {
+    "id": "2310.11511_fig_3",
+    "paper": "2310.11511",
+    "page": 9,
+    "label": "Figure 3",
+    "caption": "Figure 3: Analysis on SELF-RAG: (a) Ablation studies for key components of SELF-RAG training and inference based on our 7B model. (b) Effects of soft weights on ASQA citation precision and Mauve (fluency). (c) Retrieval frequency and normalized accuracy on PubHealth and PopQA.",
+    "image_path": "data/images/2310.11511_fig_3.png"
+  },
+  {
+    "id": "2310.11511_fig_4",
+    "paper": "2310.11511",
+    "page": 10,
+    "label": "Figure 4",
+    "caption": "Figure 4: Training scale and Human analysis: (a) (b) (c) Training scale analysis shows the effect of the training data scale on PopQA, PubHealth and ASQA (citation precision), respectively. (d) Human analysis on SELF-RAG outputs as well as reflection tokens.",
+    "image_path": "data/images/2310.11511_fig_4.png"
+  },
+  {
+    "id": "2311.09476_fig_1",
+    "paper": "2311.09476",
+    "page": 4,
+    "label": "Figure 1",
+    "caption": "Figure 1: Overview of ARES: As inputs, the ARES pipeline requires an in-domain passage set, a human preference validation set of 150 annotated datapoints or more, and few-shot examples of in-domain queries and answers (five or more), which are used for prompting LLMs in synthetic data generation. To prepare our LLM judges for evaluation, we first generate synthetic queries and answers from the corpus passages. Using our generated training triples and a constrastive learning framework, we fine-tune an LLM to classify query-passage-answer triples in three different criteria: context relevance, answer faithfulness, and answer relevance. Finally, we use the LLM judges to score RAG systems and generate confidence bounds for the ranking using PPI and the human preference validation set.",
+    "image_path": "data/images/2311.09476_fig_1.png"
+  },
+  {
+    "id": "2311.09476_fig_2",
+    "paper": "2311.09476",
+    "page": 14,
+    "label": "Figure 2",
+    "caption": "Figure 2: RAG Systems Evaluation on NQ - Context Relevance",
+    "image_path": "data/images/2311.09476_fig_2.png"
+  },
+  {
+    "id": "2311.09476_fig_3",
+    "paper": "2311.09476",
+    "page": 14,
+    "label": "Figure 3",
+    "caption": "Figure 3: RAG Systems Evaluation on NQ - Answer Relevance",
+    "image_path": "data/images/2311.09476_fig_3.png"
+  },
+  {
+    "id": "2312.06648_fig_1",
+    "paper": "2312.06648",
+    "page": 1,
+    "label": "Figure 1",
+    "caption": "Figure 1: (Top) An example of three granularities of retrieval units of Wikipedia text when using dense retrieval. (Bottom) We observe that retrieving by propositions yields the best retrieval performance in both passage retrieval task and downstream open-domain QA task, e.g. with Contriever (Izacard et al., 2022) or GTR (Ni et al., 2022) as the backbone retriever. Highlight indicates the part that contains the answer to the question.",
+    "image_path": "data/images/2312.06648_fig_1.png"
+  },
+  {
+    "id": "2312.06648_fig_2",
+    "paper": "2312.06648",
+    "page": 2,
+    "label": "Figure 2",
+    "caption": "Figure 2: We discover that segmenting and indexing a retrieval corpus on the proposition level can be a simple yet effective strategy to increase dense retrievers' generalization performance at inference time (A, B). We empirically compare the retrieval and downstream open-domain QA task performance when dense retrievers work with Wikipedia indexed at the level of 100-word passages, sentences, or propositions (C, D).",
+    "image_path": "data/images/2312.06648_fig_2.png"
+  },
+  {
+    "id": "2312.06648_fig_3",
+    "paper": "2312.06648",
+    "page": 6,
+    "label": "Figure 3",
+    "caption": "Figure 3: Document retrieval recall vs. the frequency of the target entity in each question from the Entity Questions dataset. The frequency of each entity (i.e. smaller value ⇒ less common entities, and vice versa) is estimated by the frequency of the entity in its top-1000 passage retrieved by BM25. On queries with less common entities, we observe that retrieving by proposition shows a larger advantage over retrieval by proposition.",
+    "image_path": "data/images/2312.06648_fig_3.png"
+  },
+  {
+    "id": "2312.06648_fig_4",
+    "paper": "2312.06648",
+    "page": 8,
+    "label": "Figure 4",
+    "caption": "Figure 4: Recall of the gold answer in the retrieved text limited to first k words for the GTR retriever. Finer-grained retrieval has a higher recall across all numbers of words.",
+    "image_path": "data/images/2312.06648_fig_4.png"
+  },
+  {
+    "id": "2312.06648_fig_5",
+    "paper": "2312.06648",
+    "page": 14,
+    "label": "Figure 5",
+    "caption": "Figure 5: Performance of proposition-level decomposition by models with different sizes and number of training data.",
+    "image_path": "data/images/2312.06648_fig_5.png"
+  },
+  {
+    "id": "2312.06648_fig_6",
+    "paper": "2312.06648",
+    "page": 16,
+    "label": "Figure 6",
+    "caption": "Figure 6: Document retrieval recall vs. the frequency of the target entity in each question from the Entity Questions dataset. We display the performance of two relations.",
+    "image_path": "data/images/2312.06648_fig_6.png"
+  },
+  {
+    "id": "2312.06648_fig_7",
+    "paper": "2312.06648",
+    "page": 17,
+    "label": "Figure 7",
+    "caption": "Figure 7: Recall of the gold answer in the retrieved text limited to first k words. Finer-grained retrieval has a higher recall across all numbers of words.",
+    "image_path": "data/images/2312.06648_fig_7.png"
+  },
+  {
+    "id": "2312.10997_fig_1",
+    "paper": "2312.10997",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Fig. 1. Technology tree of RAG research. The stages of involving RAG mainly include pre-training, fine-tuning, and inference. With the emergence of LLMs, research on RAG initially focused on leveraging the powerful in context learning abilities of LLMs, primarily concentrating on the inference stage. Subsequent research has delved deeper, gradually integrating more with the fine-tuning of LLMs. Researchers have also been exploring ways to enhance language models in the pre-training stage through retrieval-augmented techniques.",
+    "image_path": "data/images/2312.10997_fig_1.png"
+  },
+  {
+    "id": "2312.10997_fig_2",
+    "paper": "2312.10997",
+    "page": 3,
+    "label": "Figure 2",
+    "caption": "Fig. 2. A representative instance of the RAG process applied to question answering. It mainly consists of 3 steps. 1) Indexing. Documents are split into chunks, encoded into vectors, and stored in a vector database. 2) Retrieval. Retrieve the Top k chunks most relevant to the question based on semantic similarity. 3) Generation. Input the original question and the retrieved chunks together into LLM to generate the final answer.",
+    "image_path": "data/images/2312.10997_fig_2.png"
+  },
+  {
+    "id": "2312.10997_fig_3",
+    "paper": "2312.10997",
+    "page": 4,
+    "label": "Figure 3",
+    "caption": "Fig. 3. Comparison between the three paradigms of RAG. (Left) Naive RAG mainly consists of three parts: indexing, retrieval and generation. (Middle) Advanced RAG proposes multiple optimization strategies around pre-retrieval and post-retrieval, with a process similar to the Naive RAG, still following a chain-like structure. (Right) Modular RAG inherits and develops from the previous paradigm, showcasing greater flexibility overall. This is evident in the introduction of multiple specific functional modules and the replacement of existing modules. The overall process is not limited to sequential retrieval and generation; it includes methods such as iterative and adaptive retrieval.",
+    "image_path": "data/images/2312.10997_fig_3.png"
+  },
+  {
+    "id": "2312.10997_fig_4",
+    "paper": "2312.10997",
+    "page": 7,
+    "label": "Figure 4",
+    "caption": "Fig. 4. RAG compared with other model optimization methods in the aspects of \"External Knowledge Required\" and \"Model Adaption Required\". Prompt Engineering requires low modifications to the model and external knowledge, focusing on harnessing the capabilities of LLMs themselves. Fine-tuning, on the other hand, involves further training the model. In the early stages of RAG (Naive RAG), there is a low demand for model modifications. As research progresses, Modular RAG has become more integrated with fine-tuning techniques.",
+    "image_path": "data/images/2312.10997_fig_4.png"
+  },
+  {
+    "id": "2312.10997_fig_5",
+    "paper": "2312.10997",
+    "page": 11,
+    "label": "Figure 5",
+    "caption": "Fig. 5. In addition to the most common once retrieval, RAG also includes three types of retrieval augmentation processes. (left) Iterative retrieval involves alternating between retrieval and generation, allowing for richer and more targeted context from the knowledge base at each step. (Middle) Recursive retrieval involves gradually refining the user query and breaking down the problem into sub-problems, then continuously solving complex problems through retrieval and generation. (Right) Adaptive retrieval focuses on enabling the RAG system to autonomously determine whether external knowledge retrieval is necessary and when to stop retrieval and generation, often utilizing LLM-generated special tokens for control.",
+    "image_path": "data/images/2312.10997_fig_5.png"
+  },
+  {
+    "id": "2312.10997_fig_6",
+    "paper": "2312.10997",
+    "page": 16,
+    "label": "Figure 6",
+    "caption": "Fig. 6. Summary of RAG ecosystem",
+    "image_path": "data/images/2312.10997_fig_6.png"
+  },
+  {
+    "id": "2401.05856_fig_1",
+    "paper": "2401.05856",
+    "page": 3,
+    "label": "Figure 1",
+    "caption": "Figure 1: Indexing and Query processes required for creating a Retrieval Augmented Generation (RAG) system. The indexing process is typically done at development time and queries at runtime. Failure points identified in this study are shown in red boxes. All required stages are underlined. Figure expanded from [19].",
+    "image_path": "data/images/2401.05856_fig_1.png"
+  },
+  {
+    "id": "2401.14887_fig_2",
+    "paper": "2401.14887",
+    "page": 5,
+    "label": "Figure 2",
+    "caption": "Figure 2: Example LLM input with an erroneous output, highlighted in red. The context of the prompt is composed of distracting documents and the gold near the query. The task instruction is as in Figure 1.",
+    "image_path": "data/images/2401.14887_fig_2.png"
+  },
+  {
+    "id": "2401.14887_fig_3",
+    "paper": "2401.14887",
+    "page": 7,
+    "label": "Figure 3",
+    "caption": "Figure 3: This heatmap depicts the attention distribution across the context documents from the example shown in Figure 2, relative to the answer generated by Llama2-7b in a prompt structured as [I, unlink, ⋆, Q]. Cell (i, j) denotes the mean attention that tokens in the generated answer allocate to the tokens of the i-th document within the j-th attention layer. This mean attention for each document is calculated by averaging the attention scores across all its constituent tokens.",
+    "image_path": "data/images/2401.14887_fig_3.png"
+  },
+  {
+    "id": "2401.15884_fig_1",
+    "paper": "2401.15884",
+    "page": 1,
+    "label": "Figure 1",
+    "caption": "Figure 1: The examples show that a low-quality retriever is prone to introducing a substantial amount of irrelevant information, impeding the generators from acquiring accurate knowledge and potentially misleading them.",
+    "image_path": "data/images/2401.15884_fig_1.png"
+  },
+  {
+    "id": "2401.15884_fig_2",
+    "paper": "2401.15884",
+    "page": 4,
+    "label": "Figure 2",
+    "caption": "Figure 2: An overview of the proposed CRAG at inference. A retrieval evaluator is constructed to evaluate the relevance of the retrieved documents to the input, and estimate a confidence degree based on which different knowledge retrieval actions of {Correct, Incorrect, Ambiguous} can be triggered.",
+    "image_path": "data/images/2401.15884_fig_2.png"
+  },
+  {
+    "id": "2401.15884_fig_3",
+    "paper": "2401.15884",
+    "page": 9,
+    "label": "Figure 3",
+    "caption": "Figure 3: The generation performance of Self-RAG and Self-CRAG given different retrieval performance on the PopQA dataset with SelfRAG-LLaMA-7b. The lower horizontal line demonstrates the performance of the generator without retrieval.",
+    "image_path": "data/images/2401.15884_fig_3.png"
+  },
+  {
+    "id": "2401.18059_fig_1",
+    "paper": "2401.18059",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: Tree construction process: RAPTOR recursively clusters chunks of text based on their vector embeddings and generates text summaries of those clusters, constructing a tree from the bottom up. Nodes clustered together are siblings; a parent node contains the text summary of that cluster.",
+    "image_path": "data/images/2401.18059_fig_1.png"
+  },
+  {
+    "id": "2401.18059_fig_2",
+    "paper": "2401.18059",
+    "page": 5,
+    "label": "Figure 2",
+    "caption": "Figure 2: Illustration of the tree traversal and collapsed tree retrieval mechanisms. Tree traversal starts at the root level of the tree and retrieves the top-k (here, top-1) node(s) based on cosine similarity to the query vector. At each level, it retrieves the top-k node(s) from the child nodes of the previous layer's top-k. Collapsed tree collapses the tree into a single layer and retrieves nodes until a threshold number of tokens is reached, based on cosine similarity to the query vector. The nodes on which cosine similarity search is performed are highlighted in both illustrations.",
+    "image_path": "data/images/2401.18059_fig_2.png"
+  },
+  {
+    "id": "2401.18059_fig_3",
+    "paper": "2401.18059",
+    "page": 6,
+    "label": "Figure 3",
+    "caption": "Figure 3: Comparison of querying methods. Results on 20 stories from the QASPER dataset using tree traversal with different top-k values, and collapsed tree with different context lengths. Collapsed tree with 2000 tokens produces the best results, so we use this querying strategy for our main results.",
+    "image_path": "data/images/2401.18059_fig_3.png"
+  },
+  {
+    "id": "2401.18059_fig_4",
+    "paper": "2401.18059",
+    "page": 7,
+    "label": "Figure 4",
+    "caption": "Figure 4: Querying Process: Illustration of how RAPTOR retrieves information for two questions about the Cinderella story: \"What is the central theme of the story?\" and \"How did Cinderella find a happy ending?\". Highlighted nodes indicate RAPTOR's selections, while arrows point to DPR's leaf nodes. Notably, RAPTOR's context often encompasses the information retrieved by DPR, either directly or within higher-layer summaries.",
+    "image_path": "data/images/2401.18059_fig_4.png"
+  },
+  {
+    "id": "2401.18059_fig_5",
+    "paper": "2401.18059",
+    "page": 15,
+    "label": "Figure 5",
+    "caption": "Figure 5: Token cost as a function of document length for QASPER, NarrativeQA, and QuALITY. RAPTOR tree construction costs scale linearly with document length for each of the datasets.",
+    "image_path": "data/images/2401.18059_fig_5.png"
+  },
+  {
+    "id": "2401.18059_fig_6",
+    "paper": "2401.18059",
+    "page": 16,
+    "label": "Figure 6",
+    "caption": "Figure 6: Build time as a function of document length for documents of up to 80,000 tokens. RAPTOR tree construction time scales linearly with document length for each of the datasets.",
+    "image_path": "data/images/2401.18059_fig_6.png"
+  },
+  {
+    "id": "2401.18059_fig_7",
+    "paper": "2401.18059",
+    "page": 22,
+    "label": "Figure 7",
+    "caption": "Figure 7: Histogram showing the percentage of nodes retrieved from different layers of the RAPTOR tree across three datasets (NarrativeQA, Quality, and Qasper) using three retrievers (SBERT, BM25, and DPR). The data indicate that a substantial portion of the nodes contributing to the final retrieval comes from non-leaf layers, with a notable percentage from the first and second layers, highlighting the importance of RAPTOR's hierarchical summarization in the retrieval process.",
+    "image_path": "data/images/2401.18059_fig_7.png"
+  },
+  {
+    "id": "2402.03216_fig_1",
+    "paper": "2402.03216",
+    "page": 1,
+    "label": "Figure 1",
+    "caption": "Figure 1: Characters of M3-Embedding.",
+    "image_path": "data/images/2402.03216_fig_1.png"
+  },
+  {
+    "id": "2402.03216_fig_2",
+    "paper": "2402.03216",
+    "page": 4,
+    "label": "Figure 2",
+    "caption": "Figure 2: Multi-stage training process of M3-Embedding with self-knowledge distillation.",
+    "image_path": "data/images/2402.03216_fig_2.png"
+  },
+  {
+    "id": "2402.03216_fig_3",
+    "paper": "2402.03216",
+    "page": 5,
+    "label": "Figure 3",
+    "caption": "Figure 3: Efficient Batching. (Data is grouped and sampled by length. Gradient-checkpointing and crossGPU broadcasting are enabled to save memory.)",
+    "image_path": "data/images/2402.03216_fig_3.png"
+  },
+  {
+    "id": "2402.03216_fig_4",
+    "paper": "2402.03216",
+    "page": 16,
+    "label": "Figure 4",
+    "caption": "Figure 4: Language and sequence length distribution of unsupervised data",
+    "image_path": "data/images/2402.03216_fig_4.png"
+  },
+  {
+    "id": "2402.03216_fig_5",
+    "paper": "2402.03216",
+    "page": 16,
+    "label": "Figure 5",
+    "caption": "Figure 5: NarrativeQA with variant sequence length.",
+    "image_path": "data/images/2402.03216_fig_5.png"
+  },
+  {
+    "id": "2404.16130_fig_1",
+    "paper": "2404.16130",
+    "page": 4,
+    "label": "Figure 1",
+    "caption": "Figure 1: Graph RAG pipeline using an LLM-derived graph index of source document text. This graph index spans nodes (e.g., entities), edges (e.g., relationships), and covariates (e.g., claims) that have been detected, extracted, and summarized by LLM prompts tailored to the domain of the dataset. Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index into groups of elements (nodes, edges, covariates) that the LLM can summarize in parallel at both indexing time and query time. The \"global answer\" to a given query is produced using a final round of query-focused summarization over all community summaries reporting relevance to that query.",
+    "image_path": "data/images/2404.16130_fig_1.png"
+  },
+  {
+    "id": "2404.16130_fig_2",
+    "paper": "2404.16130",
+    "page": 10,
+    "label": "Figure 2",
+    "caption": "Figure 2: Head-to-head win rate percentages of (row condition) over (column condition) across two datasets, four metrics, and 125 questions per comparison (each repeated five times and averaged). The overall winner per dataset and metric is shown in bold. Self-win rates were not computed but are shown as the expected 50% for reference. All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity. Conditions C1-C3 also showed slight improvements in answer comprehensiveness and diversity over TS (global text summarization without a graph index).",
+    "image_path": "data/images/2404.16130_fig_2.png"
+  },
+  {
+    "id": "2404.16130_fig_3",
+    "paper": "2404.16130",
+    "page": 18,
+    "label": "Figure 3",
+    "caption": "Figure 3: How the entity references detected in the HotPotQA dataset (Yang et al., 2018) varies with chunk size and self-reflection iterations for our generic entity extraction prompt with gpt-4-turbo.",
+    "image_path": "data/images/2404.16130_fig_3.png"
+  },
+  {
+    "id": "2404.16130_fig_4",
+    "paper": "2404.16130",
+    "page": 19,
+    "label": "Figure 4",
+    "caption": "Figure 4: Graph communities detected using the Leiden algorithm (Traag et al., 2019) over the MultiHop-RAG (Tang and Yang, 2024) dataset as indexed. Circles represent entity nodes with size proportional to their degree. Node layout was performed via OpenORD (Martin et al., 2011) and Force Atlas 2 (Jacomy et al., 2014). Node colors represent entity communities, shown at two levels of hierarchical clustering: (a) Level 0, corresponding to the hierarchical partition with maximum modularity, and (b) Level 1, which reveals internal structure within these root-level communities.",
+    "image_path": "data/images/2404.16130_fig_4.png"
+  },
+  {
+    "id": "2407.01219_fig_1",
+    "paper": "2407.01219",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: Retrieval-augmented generation workflow. This study investigates the contribution of each component and provides insights into optimal RAG practices through extensive experimentation. The optional methods considered for each component are indicated in bold fonts, while the methods underlined indicate the default choice for individual modules. The methods indicated in blue font denote the best-performing selections identified empirically.",
+    "image_path": "data/images/2407.01219_fig_1.png"
+  },
+  {
+    "id": "2407.01219_fig_2",
+    "paper": "2407.01219",
+    "page": 4,
+    "label": "Figure 2",
+    "caption": "Figure 2: Classification of retrieval requirements for different tasks. In cases where information is not provided, we differentiate tasks based on the functions of the model.",
+    "image_path": "data/images/2407.01219_fig_2.png"
+  },
+  {
+    "id": "2407.01219_fig_3",
+    "paper": "2407.01219",
+    "page": 10,
+    "label": "Figure 3",
+    "caption": "Figure 3: Results of generator fine-tuning.",
+    "image_path": "data/images/2407.01219_fig_3.png"
+  },
+  {
+    "id": "2407.01219_fig_4",
+    "paper": "2407.01219",
+    "page": 13,
+    "label": "Figure 4",
+    "caption": "Figure 4: Workflow of multimodal retrieval. The upper section illustrates the text-to-image retrieval process. Initially, a text query is used to find images in the database with the highest similarity. If a high similarity is found, the image is returned directly. If not, an image generation model is employed to create and return an appropriate image. The lower section demonstrates the image-to-text retrieval process. Here, a user-provided image is matched with images in the database to find the highest similarity. If a high similarity is identified, the pre-stored caption of the matching image is returned. Otherwise, an image captioning model generates and returns a new caption.",
+    "image_path": "data/images/2407.01219_fig_4.png"
+  },
+  {
+    "id": "2407.01449_fig_1",
+    "paper": "2407.01449",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: ColPali simplifies document retrieval w.r.t. standard retrieval methods while achieving stronger performances with better latencies. Latencies and results are detailed in section 5 and subsection B.4.",
+    "image_path": "data/images/2407.01449_fig_1.png"
+  },
+  {
+    "id": "2407.01449_fig_2",
+    "paper": "2407.01449",
+    "page": 5,
+    "label": "Figure 2",
+    "caption": "Figure 2: Offline document indexing with ColPali is much simpler and faster compared to standard retrieval methods. The PDF Parser results are obtained following the Unstructured settings with BGE-M3 detailed in subsection 3.2. All indexing speeds are averaged per-page latencies. More details in subsection B.4",
+    "image_path": "data/images/2407.01449_fig_2.png"
+  },
+  {
+    "id": "2407.01449_fig_3",
+    "paper": "2407.01449",
+    "page": 9,
+    "label": "Figure 3",
+    "caption": "Figure 3: (Left: Token Pooling) Relative performance degradation when reducing the number of stored embeddings per document. (Right: Interpretability) For each term in a user query, ColPali identifies the most relevant document image patches (highlighted zones) and computes a query-topage matching score.",
+    "image_path": "data/images/2407.01449_fig_3.png"
+  },
+  {
+    "id": "2407.01449_fig_4",
+    "paper": "2407.01449",
+    "page": 19,
+    "label": "Figure 4",
+    "caption": "Figure 4: Example from the \"Energy\" test set.",
+    "image_path": "data/images/2407.01449_fig_4.png"
+  },
+  {
+    "id": "2407.01449_fig_5",
+    "paper": "2407.01449",
+    "page": 20,
+    "label": "Figure 5",
+    "caption": "Figure 5: Example from the \"Government Reports\" test set.",
+    "image_path": "data/images/2407.01449_fig_5.png"
+  },
+  {
+    "id": "2407.01449_fig_6",
+    "paper": "2407.01449",
+    "page": 22,
+    "label": "Figure 6",
+    "caption": "Figure 6: Similarity of the image patches w.r.t. the underlined token in the user query. This example is from the Shift test set.",
+    "image_path": "data/images/2407.01449_fig_6.png"
+  },
+  {
+    "id": "2407.01449_fig_u12",
+    "paper": "2407.01449",
+    "page": 25,
+    "label": "",
+    "caption": "Query: What is the chemical formula for the ferroelectric material Lead Zirconium Titanate (PZT)? Query: What government entities are involved in public financing for healthcare in the US?",
+    "image_path": "data/images/2407.01449_fig_u12.png"
+  },
+  {
+    "id": "2407.01449_fig_u15",
+    "paper": "2407.01449",
+    "page": 26,
+    "label": "",
+    "caption": "Query: Selon le graphique, quelle est la capacit´e d'import et la consommation r´eelle de carburants SAF (biocarburants durables pour l'aviation) pr´evues en 2050 ?",
+    "image_path": "data/images/2407.01449_fig_u15.png"
+  },
+  {
+    "id": "2407.12216_fig_1",
+    "paper": "2407.12216",
+    "page": 4,
+    "label": "Figure 1",
+    "caption": "Figure 1. Mindful-RAG results on WebQSP and MetaQA",
+    "image_path": "data/images/2407.12216_fig_1.png"
+  },
+  {
+    "id": "2407.12883_fig_1",
+    "paper": "2407.12883",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: Existing retrieval benchmarks focus on keyword-based retrieval (level 1), or semantic-based retrieval (level 2), e.g., NQ, MS MARCO datasets (Kwiatkowski et al., 2019; Bajaj et al., 2018). BRIGHT introduces level 3 retrieval, where the relevance between queries and documents requires intensive reasoning to determine. Our data consists of natural user queries from diverse domains (e.g., economics, math, earth sciences, etc.). BRIGHT corpora also span across web data, such as blogs, syntax documentation, and STEM problem-solutions.",
+    "image_path": "data/images/2407.12883_fig_1.png"
+  },
+  {
+    "id": "2407.12883_fig_2",
+    "paper": "2407.12883",
+    "page": 5,
+    "label": "Figure 2",
+    "caption": "Figure 2: An overview of the data annotation process for StackExchange data. The post content is used as the query. Positive documents are selected passages from web pages linked in the answer, while the remaining passages, results from Google, and passages filtered by annotators are considered negatives. The web pages can include content fromWikipedia, blogs, articles, reports, and more.",
+    "image_path": "data/images/2407.12883_fig_2.png"
+  },
+  {
+    "id": "2407.12883_fig_3",
+    "paper": "2407.12883",
+    "page": 9,
+    "label": "Figure 3",
+    "caption": "Figure 3: Average nDCG@10 score on BRIGHT when using the original query vs. reasoning steps generated by GritLM, Llama3-70B and GPT-4 for retrieval. Searching with LLM reasoning steps significantly improves performance. Surprisingly, BM25 achieves the best performance in the leaderboard using reasoning steps written by GPT-4 as new queries. Detailed scores are in Table 34 to 38.",
+    "image_path": "data/images/2407.12883_fig_3.png"
+  },
+  {
+    "id": "2408.08067_fig_1",
+    "paper": "2408.08067",
+    "page": 4,
+    "label": "Figure 1",
+    "caption": "Figure 1: Illustration of the proposed metrics in RAGCHECKER . The upper Venn diagram depicts the comparison between a model response and the ground truth answer, showing possible correct( ), incorrect( ), and missing claims( ). The retrieved chunks are classified into two categories based on the type of claims they contain. Below, we define the overall, retriever, and generator metrics, illustrating how each component of the RAG system is evaluated for its performance.",
+    "image_path": "data/images/2408.08067_fig_1.png"
+  },
+  {
+    "id": "2408.08067_fig_10",
+    "paper": "2408.08067",
+    "page": 25,
+    "label": "Figure 10",
+    "caption": "Figure 10: Diagnosis on Chunk Overlap Ratio",
+    "image_path": "data/images/2408.08067_fig_10.png"
+  },
+  {
+    "id": "2408.08067_fig_3",
+    "paper": "2408.08067",
+    "page": 17,
+    "label": "Figure 3",
+    "caption": "Figure 3: The human annotation interface and instructions of the meta evaluation dataset.",
+    "image_path": "data/images/2408.08067_fig_3.png"
+  },
+  {
+    "id": "2408.08067_fig_4",
+    "paper": "2408.08067",
+    "page": 19,
+    "label": "Figure 4",
+    "caption": "Figure 4: Comparison of prediction score distribution between RAGCHECKER and RAGAS Answer Similarity. Each point in the plot represents an instance in the meta evaluation dataset, where the x-axis is the human preference label under corresponding aspect and y-axis is the prediction score of RAGCHECKER and RAGAS Answer Similarity. The distribution of prediction score is represented by the colored area and the dashed line is the mean line.",
+    "image_path": "data/images/2408.08067_fig_4.png"
+  },
+  {
+    "id": "2408.08067_fig_5",
+    "paper": "2408.08067",
+    "page": 20,
+    "label": "Figure 5",
+    "caption": "Figure 5: The default prompt used for response generation in the main experiments for the 8 RAG baseline systems.",
+    "image_path": "data/images/2408.08067_fig_5.png"
+  },
+  {
+    "id": "2408.08067_fig_6",
+    "paper": "2408.08067",
+    "page": 21,
+    "label": "Figure 6",
+    "caption": "Figure 6: Diagnosis on Top-k Selection",
+    "image_path": "data/images/2408.08067_fig_6.png"
+  },
+  {
+    "id": "2408.08067_fig_7",
+    "paper": "2408.08067",
+    "page": 22,
+    "label": "Figure 7",
+    "caption": "Figure 7: Diagnosis on Chunk Size",
+    "image_path": "data/images/2408.08067_fig_7.png"
+  },
+  {
+    "id": "2408.08067_fig_8",
+    "paper": "2408.08067",
+    "page": 23,
+    "label": "Figure 8",
+    "caption": "Figure 8: Diagnosis on Generation Prompts",
+    "image_path": "data/images/2408.08067_fig_8.png"
+  },
+  {
+    "id": "2408.08067_fig_9",
+    "paper": "2408.08067",
+    "page": 24,
+    "label": "Figure 9",
+    "caption": "Figure 9: The optimized prompt for response generation. In this prompt, we explicitly instruct the LLMs to be faithful to the context and identify relevant information as possible.",
+    "image_path": "data/images/2408.08067_fig_9.png"
+  },
+  {
+    "id": "2408.09869_fig_1",
+    "paper": "2408.09869",
+    "page": 3,
+    "label": "Figure 1",
+    "caption": "Figure 1: Sketch of Docling's default processing pipeline. The inner part of the model pipeline is easily customizable and extensible.",
+    "image_path": "data/images/2408.09869_fig_1.png"
+  },
+  {
+    "id": "2408.09869_fig_3",
+    "paper": "2408.09869",
+    "page": 9,
+    "label": "Figure 3",
+    "caption": "Figure 3: Page 6 of the DocLayNet paper. If recognized, metadata such as authors are appearing first under the title. Elements recognized as page headers or footers are suppressed in Markdown to deliver uninterrupted content in reading order. Tables are inserted in reading order. The paragraph in \"5. Experiments\" wrapping over the column end is broken up in two and interrupted by the table.",
+    "image_path": "data/images/2408.09869_fig_3.png"
+  },
+  {
+    "id": "2409.12941_fig_1",
+    "paper": "2409.12941",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: An example from the FRAMES dataset, highlighting the core capabilities needed by a system (Factuality, Retrieval, Reasoning) to answer the question.",
+    "image_path": "data/images/2409.12941_fig_1.png"
+  },
+  {
+    "id": "2409.12941_fig_2",
+    "paper": "2409.12941",
+    "page": 5,
+    "label": "Figure 2",
+    "caption": "Figure 2: The figure shows the distribution of questions in the FRAMES, with the percentage of questions requiring different numbers of Wikipedia articles (left) and the percentage of the dataset belonging to each reasoning type (right). Please note that the percentage bar for 11 denotes the percentage of questions requiring 11 or more Wikipedia articles.",
+    "image_path": "data/images/2409.12941_fig_2.png"
+  },
+  {
+    "id": "2409.12941_fig_3",
+    "paper": "2409.12941",
+    "page": 7,
+    "label": "Figure 3",
+    "caption": "Figure 3: This plot shows model performance for each reasoning type in single-step (a) and multi-step (b) evaluations. Reasoning types: MC (Multiple Constraints), NR (Numerical Reasoning), PP (Post Processing), TR (Tabular Reasoning), and TeR (Temporal Reasoning). (a) Gemini-Pro-1.5-0514's accuracy across reasoning types in single-step evaluations. Results show better performance in logical and temporal reasoning, with weaknesses in numerical, tabular, and post-processing reasoning. Oracle information significantly improves accuracy across all categories. (b) Gemini-Pro-1.5-0514's accuracy in multi-step evaluations. Multi-step search planning increases performance for all reasoning types, with numerical reasoning surpassing oracle performance.",
+    "image_path": "data/images/2409.12941_fig_3.png"
+  },
+  {
+    "id": "2409.12941_fig_4",
+    "paper": "2409.12941",
+    "page": 8,
+    "label": "Figure 4",
+    "caption": "Figure 4: The figure shows the performance improvements when the number of steps (n) and number of queries per step (k) is changed. We achieved the best performance of 0.66 with the combination of (k, n, n_docs) = (5,5,10)",
+    "image_path": "data/images/2409.12941_fig_4.png"
+  },
+  {
+    "id": "2409.12941_fig_5",
+    "paper": "2409.12941",
+    "page": 13,
+    "label": "Figure 5",
+    "caption": "Figure 5: Prompt used to generate questions synthetically using Gemini-Pro-1.5-0514. k_context and n_questions are placeholders for the number of articles provided and the number of questions to generate per inference.",
+    "image_path": "data/images/2409.12941_fig_5.png"
+  },
+  {
+    "id": "2410.10594_fig_1",
+    "paper": "2410.10594",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: TextRAG vs. VisRAG on final generation accuracy. In TextRAG, parsed text serves as the basis for both retrieval and generation processes. In contrast, VisRAG leverages the original document image directly by using a VLM-based retriever and generator. Details can be found in Sec. 5.1.",
+    "image_path": "data/images/2410.10594_fig_1.png"
+  },
+  {
+    "id": "2410.10594_fig_2",
+    "paper": "2410.10594",
+    "page": 4,
+    "label": "Figure 2",
+    "caption": "Figure 2: TextRAG (left) vs. VisRAG (right). Traditional text-based RAG (TextRAG) relies on parsed texts for retrieval and generation, losing visual information in multi-modal documents. Our vision-based RAG (VisRAG) employs a VLM-based retriever and generator to directly process the document page's image, thereby preserving all information in the original page.",
+    "image_path": "data/images/2410.10594_fig_2.png"
+  },
+  {
+    "id": "2410.10594_fig_4",
+    "paper": "2410.10594",
+    "page": 9,
+    "label": "Figure 4",
+    "caption": "Figure 4: Average retrieval performance of VisRAG-Ret vs. MiniCPM (OCR) trained with different numbers of training examples.",
+    "image_path": "data/images/2410.10594_fig_4.png"
+  },
+  {
+    "id": "2410.10594_fig_5",
+    "paper": "2410.10594",
+    "page": 10,
+    "label": "Figure 5",
+    "caption": "Figure 5: Relative retrieval and generation performance of VisRAG, VisRAG (SigLIP), and TextRAG on different subsets of queries. The X-axes represent the query subsets where the lengths of the positive documents fall within specific percentile ranges. For comparative analysis, we set TextRAG's performance to zero and show the performance differences of other models from TextRAG.",
+    "image_path": "data/images/2410.10594_fig_5.png"
+  },
+  {
+    "id": "2410.10594_fig_6",
+    "paper": "2410.10594",
+    "page": 17,
+    "label": "Figure 6",
+    "caption": "Figure 6: Prompt for GPT-4o to generate queries, where {{ document }} is the document page.",
+    "image_path": "data/images/2410.10594_fig_6.png"
+  },
+  {
+    "id": "2410.10594_fig_u3",
+    "paper": "2410.10594",
+    "page": 9,
+    "label": "",
+    "caption": "(a) TextRAG with MiniCPM (OCR) as the retriever and MiniCPM-V 2.6 (OCR) as the generator. (b) VisRAG with VisRAG-Ret as the retriever and MiniCPM-V 2.6 as the generator.",
+    "image_path": "data/images/2410.10594_fig_u3.png"
+  },
+  {
+    "id": "2410.10594_fig_u7",
+    "paper": "2410.10594",
+    "page": 22,
+    "label": "",
+    "caption": "Table 8: Case study from DocVQA. In this case, VisRAG successfully retrieves the ground-truth document, while TextRAG fails, leading to VisRAG's correct generation and TextRAG's incorrect generation.",
+    "image_path": "data/images/2410.10594_fig_u7.png"
+  },
+  {
+    "id": "2410.10594_fig_u8",
+    "paper": "2410.10594",
+    "page": 23,
+    "label": "",
+    "caption": "Table 9: Case study from InfographicsVQA. In this case, both VisRAG and TextRAG successfully retrieve the correct document; however, only VisRAG effectively leverages the layout information, enabling accurate generation. In contrast, TextRAG suffers from information loss of the layout, resulting in incorrect responses.",
+    "image_path": "data/images/2410.10594_fig_u8.png"
+  },
+  {
+    "id": "2501.09136_fig_1",
+    "paper": "2501.09136",
+    "page": 3,
+    "label": "Figure 1",
+    "caption": "Figure 1: An Overview of Agentic RAG",
+    "image_path": "data/images/2501.09136_fig_1.png"
+  },
+  {
+    "id": "2501.09136_fig_10",
+    "paper": "2501.09136",
+    "page": 11,
+    "label": "Figure 10",
+    "caption": "Figure 10: An Overview of MultiAgent",
+    "image_path": "data/images/2501.09136_fig_10.png"
+  },
+  {
+    "id": "2501.09136_fig_11",
+    "paper": "2501.09136",
+    "page": 12,
+    "label": "Figure 11",
+    "caption": "Figure 11: Illustration of Prompt Chaining Workflow",
+    "image_path": "data/images/2501.09136_fig_11.png"
+  },
+  {
+    "id": "2501.09136_fig_12",
+    "paper": "2501.09136",
+    "page": 12,
+    "label": "Figure 12",
+    "caption": "Figure 12: Illustration Routing Workflow",
+    "image_path": "data/images/2501.09136_fig_12.png"
+  },
+  {
+    "id": "2501.09136_fig_13",
+    "paper": "2501.09136",
+    "page": 13,
+    "label": "Figure 13",
+    "caption": "Figure 13: Illustration of Parallelization Workflow",
+    "image_path": "data/images/2501.09136_fig_13.png"
+  },
+  {
+    "id": "2501.09136_fig_14",
+    "paper": "2501.09136",
+    "page": 13,
+    "label": "Figure 14",
+    "caption": "Figure 14: Illustration of Orchestrator-Workers Workflow",
+    "image_path": "data/images/2501.09136_fig_14.png"
+  },
+  {
+    "id": "2501.09136_fig_15",
+    "paper": "2501.09136",
+    "page": 14,
+    "label": "Figure 15",
+    "caption": "Figure 15: Illustration of Evaluator-Optimizer Workflow",
+    "image_path": "data/images/2501.09136_fig_15.png"
+  },
+  {
+    "id": "2501.09136_fig_16",
+    "paper": "2501.09136",
+    "page": 15,
+    "label": "Figure 16",
+    "caption": "Figure 16: An Overview of Single Agentic RAG",
+    "image_path": "data/images/2501.09136_fig_16.png"
+  },
+  {
+    "id": "2501.09136_fig_17",
+    "paper": "2501.09136",
+    "page": 17,
+    "label": "Figure 17",
+    "caption": "Figure 17: An Overview of Multi-Agent Agentic RAG Systems",
+    "image_path": "data/images/2501.09136_fig_17.png"
+  },
+  {
+    "id": "2501.09136_fig_18",
+    "paper": "2501.09136",
+    "page": 18,
+    "label": "Figure 18",
+    "caption": "Figure 18: An illustration of Hierarchical Agentic RAG",
+    "image_path": "data/images/2501.09136_fig_18.png"
+  },
+  {
+    "id": "2501.09136_fig_19",
+    "paper": "2501.09136",
+    "page": 20,
+    "label": "Figure 19",
+    "caption": "Figure 19: Overview of Agentic Corrective RAG",
+    "image_path": "data/images/2501.09136_fig_19.png"
+  },
+  {
+    "id": "2501.09136_fig_2",
+    "paper": "2501.09136",
+    "page": 4,
+    "label": "Figure 2",
+    "caption": "Figure 2: Core Components of RAG",
+    "image_path": "data/images/2501.09136_fig_2.png"
+  },
+  {
+    "id": "2501.09136_fig_20",
+    "paper": "2501.09136",
+    "page": 21,
+    "label": "Figure 20",
+    "caption": "Figure 20: An Overview of Adaptive Agentic RAG",
+    "image_path": "data/images/2501.09136_fig_20.png"
+  },
+  {
+    "id": "2501.09136_fig_21",
+    "paper": "2501.09136",
+    "page": 23,
+    "label": "Figure 21",
+    "caption": "Figure 21: An Overview of Agent-G: Agentic Framework for Graph RAG [8]",
+    "image_path": "data/images/2501.09136_fig_21.png"
+  },
+  {
+    "id": "2501.09136_fig_22",
+    "paper": "2501.09136",
+    "page": 26,
+    "label": "Figure 22",
+    "caption": "Figure 22: An Overview of GeAR: Graph-Enhanced Agent for Retrieval-Augmented Generation[37]",
+    "image_path": "data/images/2501.09136_fig_22.png"
+  },
+  {
+    "id": "2501.09136_fig_23",
+    "paper": "2501.09136",
+    "page": 28,
+    "label": "Figure 23",
+    "caption": "Figure 23: An Overview of Agentic Document Workflows (ADW) [38]",
+    "image_path": "data/images/2501.09136_fig_23.png"
+  },
+  {
+    "id": "2501.09136_fig_3",
+    "paper": "2501.09136",
+    "page": 4,
+    "label": "Figure 3",
+    "caption": "Figure 3: An Overview of Naive RAG.",
+    "image_path": "data/images/2501.09136_fig_3.png"
+  },
+  {
+    "id": "2501.09136_fig_4",
+    "paper": "2501.09136",
+    "page": 5,
+    "label": "Figure 4",
+    "caption": "Figure 4: Overview of Advanced RAG",
+    "image_path": "data/images/2501.09136_fig_4.png"
+  },
+  {
+    "id": "2501.09136_fig_5",
+    "paper": "2501.09136",
+    "page": 6,
+    "label": "Figure 5",
+    "caption": "Figure 5: Overview of Modular RAG",
+    "image_path": "data/images/2501.09136_fig_5.png"
+  },
+  {
+    "id": "2501.09136_fig_6",
+    "paper": "2501.09136",
+    "page": 7,
+    "label": "Figure 6",
+    "caption": "Figure 6: Overview of Graph RAG",
+    "image_path": "data/images/2501.09136_fig_6.png"
+  },
+  {
+    "id": "2501.09136_fig_7",
+    "paper": "2501.09136",
+    "page": 9,
+    "label": "Figure 7",
+    "caption": "Figure 7: An Overview of AI Agents",
+    "image_path": "data/images/2501.09136_fig_7.png"
+  },
+  {
+    "id": "2501.09136_fig_8",
+    "paper": "2501.09136",
+    "page": 10,
+    "label": "Figure 8",
+    "caption": "Figure 8: An Overview of Agentic Self- Reflection",
+    "image_path": "data/images/2501.09136_fig_8.png"
+  },
+  {
+    "id": "2501.09136_fig_9",
+    "paper": "2501.09136",
+    "page": 10,
+    "label": "Figure 9",
+    "caption": "Figure 9: Overview of Agentic Planning and Tool Use",
+    "image_path": "data/images/2501.09136_fig_9.png"
+  },
+  {
+    "id": "2503.09516_fig_1",
+    "paper": "2503.09516",
+    "page": 4,
+    "label": "Figure 1",
+    "caption": "Figure 1: Demonstration of PPO and GRPO training with the search engine (SEARCH-R1). During the rollout, LLMs can conduct multi-turn interactions with the search engine.",
+    "image_path": "data/images/2503.09516_fig_1.png"
+  },
+  {
+    "id": "2503.09516_fig_3",
+    "paper": "2503.09516",
+    "page": 17,
+    "label": "Figure 3",
+    "caption": "Figure 3: Retrieved Token Loss Masking Study",
+    "image_path": "data/images/2503.09516_fig_3.png"
+  },
+  {
+    "id": "2503.09516_fig_4",
+    "paper": "2503.09516",
+    "page": 17,
+    "label": "Figure 4",
+    "caption": "Figure 4: Study of SEARCH-R1 on base and instruct LLMs. The instruction model converges faster and starts from a better initial performance. However, the final performance of both models is very similar.",
+    "image_path": "data/images/2503.09516_fig_4.png"
+  },
+  {
+    "id": "2503.09516_fig_6",
+    "paper": "2503.09516",
+    "page": 19,
+    "label": "Figure 6",
+    "caption": "Figure 6: The training dynamics of SEARCH-R1 with a different number of retrieved passages. (LLM: Qwen2.5-7b-base, RL: PPO)",
+    "image_path": "data/images/2503.09516_fig_6.png"
+  },
+  {
+    "id": "2503.09516_fig_7",
+    "paper": "2503.09516",
+    "page": 19,
+    "label": "Figure 7",
+    "caption": "Figure 7: The training dynamics of SEARCH-R1 (GRPO) with different group size. (LLM: Qwen2.5-7b-base)",
+    "image_path": "data/images/2503.09516_fig_7.png"
+  },
+  {
+    "id": "2510.13975_fig_1",
+    "paper": "2510.13975",
+    "page": 2,
+    "label": "Figure 1",
+    "caption": "Figure 1: Diagram of our implemented RAG architecture, reflective of systems currently applied in industry. Components are annotated with error types that are caused by them.",
+    "image_path": "data/images/2510.13975_fig_1.png"
+  },
+  {
+    "id": "2510.13975_fig_2",
+    "paper": "2510.13975",
+    "page": 7,
+    "label": "Figure 2",
+    "caption": "Figure 2: Modal error type distribution per dataset.",
+    "image_path": "data/images/2510.13975_fig_2.png"
+  },
+  {
+    "id": "2510.13975_fig_3",
+    "paper": "2510.13975",
+    "page": 22,
+    "label": "Figure 3",
+    "caption": "Figure 3: Joint distribution of first and second mode error categories for the generation stage. Left: Dragonball-EN Right: CLAPnq",
+    "image_path": "data/images/2510.13975_fig_3.png"
+  },
+  {
+    "id": "2510.13975_fig_4",
+    "paper": "2510.13975",
+    "page": 23,
+    "label": "Figure 4",
+    "caption": "Figure 4: Joint distribution of RAGEC auto-evaluation error type classifications and human annotations for DragonBall-EN",
+    "image_path": "data/images/2510.13975_fig_4.png"
+  },
+  {
+    "id": "2604.00865_fig_1",
+    "paper": "2604.00865",
+    "page": 1,
+    "label": "Figure 1",
+    "caption": "Figure 1: Statistics of different error types in ReActbased Agentic RAG on HotpotQA (500 samples).",
+    "image_path": "data/images/2604.00865_fig_1.png"
+  },
+  {
+    "id": "2604.00865_fig_11",
+    "paper": "2604.00865",
+    "page": 26,
+    "label": "Figure 11",
+    "caption": "Figure 11: Reasoning repair prompt. Given the valid prefix and aggregated retrieved documents, the model rereasons to produce a corrected answer.",
+    "image_path": "data/images/2604.00865_fig_11.png"
+  },
+  {
+    "id": "2604.00865_fig_12",
+    "paper": "2604.00865",
+    "page": 26,
+    "label": "Figure 12",
+    "caption": "Figure 12: Query rewrite prompt. Each failed query is independently rewritten into multiple alternative formulations to improve retrieval recall.",
+    "image_path": "data/images/2604.00865_fig_12.png"
+  },
+  {
+    "id": "2604.00865_fig_13",
+    "paper": "2604.00865",
+    "page": 26,
+    "label": "Figure 13",
+    "caption": "Figure 13: Answer generation prompt after re-retrieval. The model synthesizes the newly retrieved evidence to produce a corrected answer.",
+    "image_path": "data/images/2604.00865_fig_13.png"
+  },
+  {
+    "id": "2604.00865_fig_14",
+    "paper": "2604.00865",
+    "page": 27,
+    "label": "Figure 14",
+    "caption": "Figure 14: Search plan prompt (Turn 0). The model generates a structured plan identifying which facts are missing and what searches are needed.",
+    "image_path": "data/images/2604.00865_fig_14.png"
+  },
+  {
+    "id": "2604.00865_fig_15",
+    "paper": "2604.00865",
+    "page": 27,
+    "label": "Figure 15",
+    "caption": "Figure 15: Search execution prompt (Turns 1-N). The model iteratively searches for missing facts and reasons toward the final answer, with a forced-answer constraint on the last turn.",
+    "image_path": "data/images/2604.00865_fig_15.png"
+  },
+  {
+    "id": "2604.00865_fig_2",
+    "paper": "2604.00865",
+    "page": 4,
+    "label": "Figure 2",
+    "caption": "Figure 2: Overview of DR-RAG. Given a failed agentic RAG trajectory, the diagnosis model jointly assesses evidence sufficiency and performs error classification and localization. Finally, tool-conditioned local repair intervenes at the localized failure point while reusing conditionally valid prefixes and retrieved evidence.",
+    "image_path": "data/images/2604.00865_fig_2.png"
+  },
+  {
+    "id": "2604.00865_fig_3",
+    "paper": "2604.00865",
+    "page": 8,
+    "label": "Figure 3",
+    "caption": "Figure 3: Accuracy of the automated diagnosis module evaluated against Qwen3.5-Plus-annotated diagnostic labels across different datasets and baselines.",
+    "image_path": "data/images/2604.00865_fig_3.png"
+  },
+  {
+    "id": "2604.00865_fig_5",
+    "paper": "2604.00865",
+    "page": 16,
+    "label": "Figure 5",
+    "caption": "Figure 5: Confusion matrix of the distilled diagnosis model (row-normalized). The primary confusion occurs between Retriever Error and Search Error.",
+    "image_path": "data/images/2604.00865_fig_5.png"
+  },
+  {
+    "id": "2604.00865_fig_6",
+    "paper": "2604.00865",
+    "page": 16,
+    "label": "Figure 6",
+    "caption": "Figure 6: Repair rates by error type, stratified by diagnostic correctness. Correct diagnosis consistently yields higher repair rates across all error categories.",
+    "image_path": "data/images/2604.00865_fig_6.png"
+  },
+  {
+    "id": "2604.00865_fig_7",
+    "paper": "2604.00865",
+    "page": 17,
+    "label": "Figure 7",
+    "caption": "Figure 7: Case study of a reasoning logic error under full evidence coverage. DR-RAG localizes the earliest faulty reasoning step and repairs the error by reusing retrieved evidence, avoiding unnecessary retrieval and full trajectory regeneration.",
+    "image_path": "data/images/2604.00865_fig_7.png"
+  },
+  {
+    "id": "2608.20627_fig_1",
+    "paper": "2608.20627",
+    "page": 10,
+    "label": "Figure 1",
+    "caption": "Figure 1: Content-corruption curves on HotpotQA with BM25. Left: GPT-4o-mini agent judged by Claude Haiku 4.5. Right: Claude Haiku 4.5 agent judged by GPT-4o-mini.",
+    "image_path": "data/images/2608.20627_fig_1.png"
+  }
+]
