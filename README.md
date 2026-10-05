@@ -5,7 +5,7 @@ Describe a RAG problem, compare techniques, or ask how to implement a strategy. 
 
 [**Try the live demo**](TODO-your-hugging-face-space-url) · [Watch the 30s demo](#demo)
 
-![Kestrel screenshot](docs/screenshot.png)
+![Kestrel screenshot](pngs/image.png)
 
 ## Demo
 
