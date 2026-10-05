@@ -3,7 +3,7 @@
 **A research-grounded advisor for Retrieval-Augmented Generation.**
 Describe a RAG problem, compare techniques, or ask how to implement a strategy. Kestrel hovers over a library of RAG papers, then dives to the passages (and figures) that answer you, with sources.
 
-[**Try the live demo**](TODO-your-hugging-face-space-url) · [Watch the 30s demo](#demo)
+[**Try the live demo**](https://huggingface.co/spaces/sumi0702/Kestrel) · [pngs/Screencast from 2026-10-05 02-45-54.webm](#demo)
 
 ![Kestrel screenshot](pngs/image.png)
 
