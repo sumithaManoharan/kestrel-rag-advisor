@@ -3,8 +3,15 @@
 **A research-grounded advisor for Retrieval-Augmented Generation.**
 Describe a RAG problem, compare techniques, or ask how to implement a strategy. Kestrel hovers over a library of RAG papers, then dives to the passages (and figures) that answer you, with sources.
 
-[**Try the live demo**](TODO-your-hugging-face-space-url) (pngs/Screencast from 2026-10-05 02-45-54.webm)
-![Kestrel screenshot](pngs/image.png)
+[**Try the live demo**](TODO-your-hugging-face-space-url) · [Watch the 30s demo](#demo)
+
+![Kestrel screenshot](docs/screenshot.png)
+
+## Demo
+
+<!-- Drag and drop your video file into this README in GitHub's web editor.
+     GitHub uploads it and inserts a link like the one below on its own line. Replace this line with it. -->
+https://github.com/user-attachments/assets/TODO-your-video-id
 
 ## What it does
 
@@ -20,8 +27,8 @@ Describe a RAG problem, compare techniques, or ask how to implement a strategy. 
 flowchart LR
     Q[Your question] --> R[Rewrite follow-ups<br/>into a standalone query<br/>DeepSeek]
     R --> S[Retrieve passages, then<br/>rerank to the top 10<br/>DeepSeek]
-    R --> F[Select relevant figures<br/>if the question needs any<br/>Gemini 2.5 Flash]
-    S --> A[Answer model<br/>streams a grounded answer]
+    R --> F[Find candidate figures<br/>up to 5, from a figure index]
+    S --> A[Answer model gpt-oss<br/>streams the answer and<br/>chooses which figures to show]
     F --> A
     A --> M[Figure markers<br/>resolved to images]
     M --> U[Answer + pinned figures<br/>in the chat]
@@ -29,27 +36,27 @@ flowchart LR
 
 1. **Rewrite.** For follow-up messages, a small, fast model (DeepSeek, the same one used for reranking) turns the latest message into a standalone query. The first message is used as is.
 2. **Retrieve and rerank.** `retrieve_context(query)` finds candidate passages, and DeepSeek reranks them down to the 10 best.
-3. **Select figures.** Gemini 2.5 Flash picks up to 5 figures (each with a caption and an id) that are relevant to the question, and none when the question doesn't need a visual.
+3. **Find candidate figures.** The same retrieval step also returns up to 5 candidate figures from a separate figure index, each with a caption and an id.
 4. **Answer.** The answer model gets the passages and the figure list, and streams its response.
 5. **Pin figures.** The answer model shows a figure by writing `[[figure:<id>]]` where it belongs. The app strips the markers, drops any invented ids, and renders the chosen figures in the chat.
 
 ## Design decisions
 
-- **Two-stage figure selection.** A small, cheap model (Gemini 2.5 Flash) shortlists figures only when a question calls for one. The answer model then decides which of the shortlisted figures actually help and where they belong, so images appear right next to the text they support.
+- **The answer model picks the figures.** There is no separate image-selection model. Retrieval supplies a few candidate figures, and the same model that writes the answer decides which ones help (usually zero, one or two) and where they belong, so images appear right next to the text they support.
 - **Unknown ids are dropped silently.** If the model invents a figure id, it is ignored rather than breaking the answer.
 - **Streaming with live status.** The UI shows each pipeline stage (Rewrite, Retrieve, Reason, Illustrate) as it runs, plus passage count, figure count and response time.
 - **Evidence over confidence.** The system prompt tells the model to mark which parts come from the research and which are its own suggestions.
 
 ## Tech stack
 
-Python · Gradio · LiteLLM · DeepSeek · Gemini 2.5 Flash · TODO: vector store · TODO: embedding model · [uv](https://docs.astral.sh/uv/)
+Python · Gradio · LiteLLM · OpenRouter · ChromaDB · [uv](https://docs.astral.sh/uv/)
 
 | Role | Model |
 |---|---|
+| Embeddings | `text-embedding-3-small` |
 | Query rewriting | DeepSeek (same fast model as the reranker) |
-| Reranking | DeepSeek |
-| Figure selection | Gemini 2.5 Flash |
-| Answer generation | `openrouter/openai/gpt-oss-120b` by default |
+| Reranking | DeepSeek (`deepseek-v4.1-flash` by default) |
+| Answer generation and figure choice | `gpt-oss-120b` by default |
 
 Models are called through LiteLLM, and the answer model can be swapped by changing one environment variable.
 
@@ -102,11 +109,21 @@ Then open the local URL that Gradio prints (usually http://127.0.0.1:7860).
 └── README.md
 ```
 
+## Results
+
+<!-- TODO (optional but strong): add a few numbers, such as retrieval hit rate on a small question set,
+     or a before/after comparison with and without reranking. -->
+
 ## Limitations and next steps
 
 - Answers are only as good as the papers in the index. TODO: number of papers and date range.
+- No automated evaluation yet. TODO: add a small question set with expected sources.
 - Possible next steps: more papers, a citation panel showing the exact passages used, and user feedback buttons.
 
 ## Credits
 
 The knowledge base is built from published research papers on RAG. All papers, text excerpts and figures belong to their original authors and are shown here for educational and portfolio purposes. TODO: list the main papers.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
